@@ -1,19 +1,22 @@
 import React, { useState } from "react";
-import './NavBar.css';
-
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <a href="/">MiLogo</a>
-      </div>
-      <ul className="navbar-links">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/about">Acerca de</a></li>
-        <li><a href="/services">Servicios</a></li>
-        <li><a href="/contact">Contacto</a></li>
-      </ul>
-    </nav>
+    <nav className="navbar bg-primary navbar-links" data-bs-theme="dark">
+<ul className="nav nav-pills">
+  <li className="nav-item">
+    <a className="nav-link " aria-current="page" href="#">Inicio</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Enlace 1</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Enlace 2</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link" href="#">Enlace 3</a>
+  </li>
+</ul></nav>
   );
+  
 };
 export default Navbar;
